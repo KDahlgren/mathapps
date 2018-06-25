@@ -8,10 +8,10 @@ import sys
 #####################
 # http://mathworld.wolfram.com/PiFormulas.html
 def gregory_leibniz( k ) :
-  if k < 1 :
+  if int(k) < 1 :
     raise ValueError( "k must be >= 1." )
-  series_exp = ""
 
+  series_exp = ""
   for i in range( 1, int(k)+1 ) :
     if i % 2 == 0 :
       term_numer = "-1"
